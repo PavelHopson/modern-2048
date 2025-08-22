@@ -1,4 +1,6 @@
 # 🎮 Modern 2048
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-181717?logo=github)](https://PavelHopson.github.io/modern-2048)
+[![GitHub license](https://img.shields.io/github/license/PavelHopson/modern-2048)](https://github.com/PavelHopson/modern-2048/blob/main/LICENSE)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/PavelHopson/modern-2048?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/PavelHopson/modern-2048?style=for-the-badge)
