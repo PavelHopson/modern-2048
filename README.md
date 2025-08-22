@@ -1,12 +1,10 @@
 # 🎮 Modern 2048
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-181717?logo=github)](https://PavelHopson.github.io/modern-2048)
-[![GitHub license](https://img.shields.io/github/license/PavelHopson/modern-2048)](https://github.com/PavelHopson/modern-2048/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/PavelHopson/modern-2048)](LICENSE)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/PavelHopson/modern-2048?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/PavelHopson/modern-2048?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/PavelHopson/modern-2048?style=for-the-badge)
+![Gameplay Demo](demo.gif)
 
-Современная и высокопроизводительная реализация классической игры 2048, написанная на чистом JavaScript с использованием HTML5 Canvas. Проект демонстрирует профессиональный подход к фронтенд-разработке, включая чистую архитектуру, анимации, адаптивный дизайн и лучшие практики разработки.
+Профессиональная реализация игры 2048 с современными технологиями и подходами к разработке.
 
 [🎮 Живая демонстрация](https://pavelhopson.github.io/modern-2048/) | [📋 План разработки](#-план-разработки)
 
