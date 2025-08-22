@@ -11,6 +11,10 @@
 [🎮 Живая демонстрация](https://pavelhopson.github.io/modern-2048/) | [📋 План разработки](#-план-разработки)
 
 ![Gameplay GIF](./gameplay.gif)
+<img width="1915" height="955" alt="image" src="https://github.com/user-attachments/assets/89415aa0-74ed-4e84-a7b2-95ea1176c249" />
+<img width="1916" height="953" alt="image" src="https://github.com/user-attachments/assets/455600bc-1cb8-4f08-842c-10775eb4bcf4" />
+<img width="1910" height="953" alt="image" src="https://github.com/user-attachments/assets/ee5bbdb0-5787-4824-9686-716d50bd1b2c" />
+
 
 ## ✨ Возможности
 
