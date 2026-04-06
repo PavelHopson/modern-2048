@@ -1,157 +1,98 @@
-# 🎮 Modern 2048
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Deployed-181717?logo=github)](https://PavelHopson.github.io/modern-2048)
-[![GitHub license](https://img.shields.io/github/license/PavelHopson/modern-2048)](LICENSE)
+# Modern 2048
 
-![Gameplay Demo](demo.gif)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![SASS](https://img.shields.io/badge/SASS-CSS-CC6699?style=flat-square&logo=sass&logoColor=white)](https://sass-lang.com/)
+[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub_Pages-181717?style=flat-square&logo=github)](https://pavelhopson.github.io/modern-2048/)
+[![License: MIT](https://img.shields.io/github/license/PavelHopson/modern-2048?style=flat-square)](LICENSE)
 
-Профессиональная реализация игры 2048 с современными технологиями и подходами к разработке.
+Классическая головоломка 2048 с современным дизайном, плавными анимациями и адаптивным интерфейсом. Играйте на десктопе, планшете или телефоне.
 
-[🎮 Живая демонстрация](https://pavelhopson.github.io/modern-2048/) | [📋 План разработки](#-план-разработки)
+**[Играть онлайн](https://pavelhopson.github.io/modern-2048/)**
 
-![Gameplay GIF](./gameplay.gif)
-<img width="1915" height="955" alt="image" src="https://github.com/user-attachments/assets/89415aa0-74ed-4e84-a7b2-95ea1176c249" />
-<img width="1916" height="953" alt="image" src="https://github.com/user-attachments/assets/455600bc-1cb8-4f08-842c-10775eb4bcf4" />
-<img width="1910" height="953" alt="image" src="https://github.com/user-attachments/assets/ee5bbdb0-5787-4824-9686-716d50bd1b2c" />
+<img width="1915" height="955" alt="Modern 2048 светлая тема" src="https://github.com/user-attachments/assets/89415aa0-74ed-4e84-a7b2-95ea1176c249" />
+<img width="1916" height="953" alt="Modern 2048 темная тема" src="https://github.com/user-attachments/assets/455600bc-1cb8-4f08-842c-10775eb4bcf4" />
+<img width="1910" height="953" alt="Modern 2048 мобильная версия" src="https://github.com/user-attachments/assets/ee5bbdb0-5787-4824-9686-716d50bd1b2c" />
 
+---
 
-## ✨ Возможности
+## Возможности
 
-- 🎯 **Классический геймплей** — точное соблюдение правил оригинальной игры 2048
-- ✨ **Плавные анимации** — движение, слияние и появление плиток с интерполяцией
-- 🌙 **Светлая и тёмная темы** — с сохранением выбора пользователя
-- 📱 **Полная адаптивность** — играйте на любом устройстве (десктоп, планшет, телефон)
-- 👆 **Управление свайпами** — сенсорное управление для мобильных устройств
-- 🏆 **Система рекордов** — таблица лучших результатов (топ-5) с сохранением в LocalStorage
-- ⌨️ **Управление с клавиатуры** — поддержка стрелок и WASD
-- 🔊 **Звуковые эффекты** — immerse-опыт с озвучкой действий
-- ♿ **Доступность** — поддержка навигации с клавиатуры и скринридеров
+- Классический геймплей -- точное соблюдение правил оригинальной игры 2048
+- Плавные анимации -- движение, слияние и появление плиток
+- Светлая и темная темы с сохранением выбора
+- Полная адаптивность -- десктоп, планшет, телефон
+- Сенсорное управление свайпами для мобильных устройств
+- Таблица рекордов (топ-5) с сохранением в localStorage
+- Управление с клавиатуры (стрелки + WASD)
+- Звуковые эффекты
+- Доступность -- навигация с клавиатуры и скринридеры
 
-## 🛠 Технологический стек
+---
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-Canvas-E34F26?style=flat-square&logo=html5&logoColor=white)
-![SASS](https://img.shields.io/badge/SASS-CSS-CC6699?style=flat-square&logo=sass&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=flat-square&logo=vite&logoColor=white)
-![ESLint](https://img.shields.io/badge/ESLint-Linting-4B32C3?style=flat-square&logo=eslint&logoColor=white)
-![Prettier](https://img.shields.io/badge/Prettier-Formatting-F7B93E?style=flat-square&logo=prettier&logoColor=black)
+## Технологический стек
 
-## 🚀 Быстрый старт
+| Технология | Назначение |
+|---|---|
+| **JavaScript (ES6+)** | Игровая логика, анимации |
+| **HTML5 Canvas** | Рендеринг игрового поля |
+| **SASS** | Стилизация и темы |
+| **Vite** | Сборка и dev-сервер |
+| **ESLint + Prettier** | Качество и форматирование кода |
+| **GitHub Pages** | Хостинг |
 
-### Предварительные требования
+---
 
-- Node.js (версия 16 или выше)
-- npm или yarn
+## Быстрый старт
 
-### Установка и запуск
-
-1. Клонируйте репозиторий:
 ```bash
 git clone https://github.com/PavelHopson/modern-2048.git
 cd modern-2048
-```
-2. Установите зависимости:
-```bash
 npm install
-```
-3. Запустите сервер разработки:
-```bash
 npm run dev
 ```
-4. Откройте браузер и перейдите по адресу http://localhost:5173
-Сборка для production
-```bash
-npm run build
-```
-Собранные файлы будут размещены в директории dist/.
 
-📁 Структура проекта
-```bash
+Откройте http://localhost:5173
+
+### Доступные команды
+
+| Команда | Описание |
+|---|---|
+| `npm run dev` | Запуск сервера разработки |
+| `npm run build` | Сборка для production |
+| `npm run preview` | Предпросмотр собранного проекта |
+| `npm run lint` | Запуск линтера |
+| `npm run lint:fix` | Автоисправление линтера |
+| `npm run format` | Форматирование кода (Prettier) |
+| `npm run deploy` | Деплой на GitHub Pages |
+
+---
+
+## Структура проекта
+
+```
 modern-2048/
-├── public/                 # Статические ресурсы
-│   └── sounds/            # Звуковые эффекты
 ├── src/
 │   ├── js/
-│   │   ├── core/
-│   │   │   ├── Game.js    # Основная логика игры
-│   │   │   ├── Tile.js    # Класс плитки
-│   │   │   └── Grid.js    # Управление игровым полем
-│   │   ├── animation/
-│   │   │   └── Animator.js # Система анимаций
-│   │   ├── input/
-│   │   │   ├── KeyboardHandler.js # Обработка клавиатуры
-│   │   │   └── TouchHandler.js    # Обработка касаний
-│   │   ├── ui/
-│   │   │   ├── ThemeManager.js    # Управление темами
-│   │   │   └── ScoreManager.js    # Управление очками
+│   │   ├── core/          # Game.js, Tile.js, Grid.js
+│   │   ├── animation/     # Система анимаций
+│   │   ├── input/         # Keyboard + Touch обработчики
+│   │   ├── ui/            # ThemeManager, ScoreManager
 │   │   └── main.js        # Точка входа
-│   ├── styles/
-│   │   ├── main.scss      # Основные стили
-│   │   ├── _variables.scss # CSS-переменные
-│   │   └── _themes.scss   # Стили тем
-│   └── index.html         # HTML-шаблон
-├── tests/                 # Unit-тесты
-├── .github/workflows/     # GitHub Actions
-├── .eslintrc.js          # Конфигурация ESLint
-├── .prettierrc           # Конфигурация Prettier
+│   └── styles/            # SASS (main, variables, themes)
+├── public/sounds/         # Звуковые эффекты
+├── vite.config.js
+├── eslint.config.js
 ├── package.json
-└── README.md
+└── LICENSE
 ```
 
-📝 Доступные команды
-```
-Команда	Описание
-npm run dev	Запуск сервера разработки
-npm run build	Сборка проекта для production
-npm run preview	Предпросмотр собранного проекта
-npm run lint	Запуск линтера
-npm run lint:fix	Исправление проблем линтера
-npm run format	Форматирование кода
-npm test	Запуск unit-тестов
-```
-📊 План разработки
-```
-✅ Выполнено
-Инициализация проекта с Vite
-Настройка ESLint, Prettier и Husky
-Базовая архитектура проекта
-Реализация основной логики игры
-Система анимаций плиток
-Адаптивный дизайн
-Управление с клавиатуры и касаниями
-Система тем (светлая/тёмная)
-```
-🔄 В процессе
-```
-Таблица рекордов (топ-5)
-Система звуковых эффектов
-Unit-тесты
-GitHub Actions для CI/CD
-Деплой на GitHub Pages
-```
-📋 Предстоящие задачи
-```
-Режимы сложности (3x3, 5x5)
-Функция отмены хода (undo)
-Интеграция с PWA
-Поддержка игровых контроллеров
-Статистика игровых сессий
-```
-🤝 Участие в разработке
-```
-Если вы хотите поучаствовать в разработке:
-Форкните репозиторий
-Создайте ветку для вашей функции (git checkout -b feature/amazing-feature)
-Закоммитьте изменения (git commit -m 'Add some amazing feature')
-Запушьте в ветку (git push origin feature/amazing-feature)
-Откройте Pull Request
-```
-📄 Лицензия
-Этот проект распространяется под лицензией MIT. Подробнее см. в файле LICENSE.
+---
 
-👨‍💻 Автор
-```
-Павел Хопсон
-GitHub: @PavelHopson
-Портфолио: [ссылка на портфолио]
-```
-⭐ Не забудьте поставить звезду репозиторию, если проект вам понравился!
+## Лицензия
+
+Проект распространяется под лицензией MIT. Подробнее см. [LICENSE](LICENSE).
+
+## Автор
+
+**Павел Хопсон** — [GitHub](https://github.com/PavelHopson)
