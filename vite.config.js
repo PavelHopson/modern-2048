@@ -11,7 +11,7 @@ export default defineConfig({
       overlay: false // Отключает надоедливый overlay при ошибках
     }
   },
-  base: '/modern-2048/', // Имя вашего репозитория
+  base: '/', // Имя вашего репозитория
   build: {
     target: 'esnext',
     rollupOptions: {
