@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "project": "modern-2048",
+  "capturedAt": "2026-09-08T09:48:50.608Z",
+  "caption": "Новое игровое поле Modern 2048: плитки, счёт и локальные рекорды.",
+  "method": "isolated-local-source-preview",
+  "context": "Local source preview, clean browser storage, reduced motion, no .env, external resources and backend APIs blocked. Repository content only, no additional fixtures or personal history; no production verification.",
+  "sourceHead": "9a2e44b7d222d156ffd901b222f333730de526bc",
+  "sourceWorktreeDirty": true,
+  "entryFiles": [
+    {
+      "file": "index.html",
+      "sha256": "1428ad02b821c0666603f205213559a877badaa1710e16884a090557a25d274f"
+    },
+    {
+      "file": "package.json",
+      "sha256": "95ff037488d53be7574e306fc7e0cac9200aa85a83679924b75f7442371d223d"
+    }
+  ],
+  "screenshots": [
+    {
+      "kind": "overview",
+      "file": "overview.png",
+      "width": 1440,
+      "height": 900,
+      "sha256": "9ad2514bcfeaaa6e0702023a082291147d16a33d80344ec64e4407ff8c9f834b",
+      "bytes": 22203
+    },
+    {
+      "kind": "mobile",
+      "file": "mobile.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "e7dcd9e8e40cc50e07dbf05301acfb1664099d485a159beb01b1600ca00f5d7c",
+      "bytes": 18017
+    }
+  ],
+  "review": "Desktop and selected mobile captures visually reviewed before documentation use."
+}

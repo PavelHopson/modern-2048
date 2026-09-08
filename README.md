@@ -1,20 +1,64 @@
 # Modern 2048
 
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![SASS](https://img.shields.io/badge/SASS-CSS-CC6699?style=flat-square&logo=sass&logoColor=white)](https://sass-lang.com/)
-[![GitHub Pages](https://img.shields.io/badge/Demo-GitHub_Pages-181717?style=flat-square&logo=github)](https://pavelhopson.github.io/modern-2048/)
-[![License: MIT](https://img.shields.io/github/license/PavelHopson/modern-2048?style=flat-square)](LICENSE)
+![Modern 2048: Ход → Слияние → Счёт](docs/assets/repository-cover.svg)
 
-Классическая головоломка 2048 с современным дизайном, плавными анимациями и адаптивным интерфейсом. Играйте на десктопе, планшете или телефоне.
+**Браузерная игра.** Современная веб-реализация 2048 как самостоятельная игра и пример интерактивного интерфейса.
 
-**[Играть онлайн](https://pavelhopson.github.io/modern-2048/)**
+<!-- repository-guide:start -->
+[Интерфейс](#readme-interface) · [Первый запуск](#readme-start) · [Что внутри](#readme-map) · [Путеводитель](docs/repository-guide.md#start) · [Карта кода](docs/repository-guide.md#map) · [Проверки](docs/repository-guide.md#checks) · [Границы и права](docs/repository-guide.md#boundaries)
 
-<img width="1915" height="955" alt="Modern 2048 светлая тема" src="https://github.com/user-attachments/assets/89415aa0-74ed-4e84-a7b2-95ea1176c249" />
-<img width="1916" height="953" alt="Modern 2048 темная тема" src="https://github.com/user-attachments/assets/455600bc-1cb8-4f08-842c-10775eb4bcf4" />
-<img width="1910" height="953" alt="Modern 2048 мобильная версия" src="https://github.com/user-attachments/assets/ee5bbdb0-5787-4824-9686-716d50bd1b2c" />
+<a id="readme-interface"></a>
 
----
+## Интерфейс
+
+![Modern 2048 — Новое игровое поле Modern 2048: плитки, счёт и локальные рекорды.](docs/assets/ui/overview.png)
+
+**Новое игровое поле Modern 2048: плитки, счёт и локальные рекорды.**
+
+Локальный снимок от 8 сентября 2026: отдельный профиль браузера, без внешних API и пользовательских секретов. Это вид интерфейса, не подтверждение production-функций.
+
+<details>
+<summary><strong>Мобильный экран · 390 px</strong></summary>
+
+<img src="docs/assets/ui/mobile.png" alt="Modern 2048 — мобильный экран" width="390">
+
+</details>
+
+[Открыть в полном размере](docs/assets/ui/overview.png) · [Данные снимка](docs/assets/ui/capture.json)
+
+<a id="readme-map"></a>
+
+## Проект за минуту
+
+- **[Игра](<src/js/main.js>)** — Инициализация игрового интерфейса.
+- **[Управление](<src/js/InputHandler.js>)** — Обработка пользовательского ввода.
+- **[Плитки](<src/js/Tile.js>)** — Поведение элементов игрового поля.
+
+<a id="readme-start"></a>
+
+## Начать локально
+
+**Среда:** Node.js и npm. **Источник:** [package.json](<package.json>).
+
+Из корня клонированного репозитория:
+
+```bash
+npm ci
+npm run dev
+```
+
+Запуск сервера разработки не выполняет публикацию. Проверьте настройки окружения и основной пользовательский сценарий перед выпуском.
+
+<details>
+<summary><strong>Перед первым запуском и изменением кода</strong></summary>
+
+- Команды сверены с исходниками 8 сентября 2026. Это инструкция, а не отметка об успешном запуске или текущем production.
+- Установка зависимостей может обращаться в registry и выполнять lifecycle scripts. Используйте отдельную рабочую среду и демонстрационные данные.
+- Проверяйте клавиатуру, touch и сохранение прогресса; оформление README не заменяет игровой тест.
+
+
+</details>
+<!-- repository-guide:end -->
 
 ## Возможности
 
