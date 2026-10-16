@@ -1,5 +1,9 @@
 # Modern 2048
 
+<!-- project-links:start -->
+[Открыть веб-версию](https://pavelhopson.github.io/modern-2048/) · [Документация](docs/repository-guide.md) · [Код](https://github.com/PavelHopson/modern-2048/tree/main) · [История изменений](https://github.com/PavelHopson/modern-2048/commits/main/)
+<!-- project-links:end -->
+
 ![Modern 2048: Ход → Слияние → Счёт](docs/assets/repository-cover.svg)
 
 **Браузерная игра.** Современная веб-реализация 2048 как самостоятельная игра и пример интерактивного интерфейса.
