@@ -2,13 +2,16 @@ import js from '@eslint/js';
 import globals from 'globals';
 
 export default [
+  {
+    ignores: ['dist/**', 'node_modules/**']
+  },
   // Базовая конфигурация ESLint
   js.configs.recommended,
   
   // Настройки для браузера и ES2021
   {
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
         ...globals.browser,

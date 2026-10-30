@@ -4,13 +4,13 @@ import { Leaderboard } from './Leaderboard.js';
 
 // Глобальная переменная game — удобно для инспекции
 let game;
-let input;
+let _input;
 const leaderboard = new Leaderboard();
 
 // Инициализируем игру
 function initGame() {
   game = new Game(4, leaderboard); // Передаем leaderboard в конструктор
-  input = new InputHandler(game);
+  _input = new InputHandler(game);
 }
 
 // Управление темой

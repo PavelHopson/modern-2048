@@ -47,6 +47,6 @@ export class Sound {
     
     const sound = this.sounds[name].cloneNode();
     sound.volume = this.sounds[name].volume;
-    sound.play().catch(e => console.log("Звук заблокирован браузером:", e));
+    sound.play().catch(() => {});
   }
 }

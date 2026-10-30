@@ -62,10 +62,6 @@ export class InputHandler {
   }
 
   restart() {
-    // создаём новую игру и переинициализируем InputHandler
-    const newGame = new this.game.constructor(this.game.size);
-    // заменяем свойства у текущего экземпляра game (или на уровне main переинициализировать ссылку)
-    // проще — для текущего flow main.js пересоздаёт глобальную game. Здесь просто триггерим custom event.
     window.dispatchEvent(new CustomEvent('game:restart'));
   }
 }

@@ -45,7 +45,7 @@ export class Tile {
   }
 
   // Обновление анимации по времени
-  updateAnimation(deltaTime) {
+  updateAnimation(_deltaTime) {
     if (!this.animation.type) return false;
     
     if (this.animation.startTime === null) {
@@ -129,7 +129,7 @@ export class Tile {
     
     // Размер шрифта
     const digits = String(this.value).length;
-    let fontSize = size * (digits <= 2 ? 0.45 : digits === 3 ? 0.36 : 0.28);
+    const fontSize = size * (digits <= 2 ? 0.45 : digits === 3 ? 0.36 : 0.28);
     ctx.font = `bold ${Math.floor(fontSize)}px Arial`;
     ctx.fillText(String(this.value), 0, 0);
     
