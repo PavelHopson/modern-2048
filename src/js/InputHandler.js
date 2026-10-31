@@ -8,14 +8,17 @@ export class InputHandler {
   bindEvents() {
     // клавиши стрелок
     window.addEventListener('keydown', (e) => {
+      if (e.target instanceof HTMLElement && e.target.closest('input, select, textarea, [contenteditable="true"]')) return;
+      if (e.code === 'Space' && e.target instanceof HTMLElement && e.target.closest('button')) return;
       if (this.game.gameState !== 'PLAYING') {
-        // перезапуск по пробелу
-        if (e.code === 'Space' && this.game.gameState === 'GAME_OVER') {
+        if (e.code === 'Space') {
+          e.preventDefault();
           this.restart();
         }
         return;
       }
 
+      if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(e.code)) e.preventDefault();
       switch (e.code) {
         case 'ArrowLeft':
         case 'KeyA':

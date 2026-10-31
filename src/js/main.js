@@ -9,8 +9,10 @@ const leaderboard = new Leaderboard();
 
 // Инициализируем игру
 function initGame() {
-  game = new Game(4, leaderboard); // Передаем leaderboard в конструктор
-  _input = new InputHandler(game);
+  const sound = game?.sound;
+  game = new Game(4, leaderboard, sound);
+  if (_input) _input.game = game;
+  else _input = new InputHandler(game);
 }
 
 // Управление темой
@@ -21,6 +23,7 @@ function initTheme() {
   // Устанавливаем сохраненную тему
   document.documentElement.setAttribute('data-theme', savedTheme);
   themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+  themeToggle.setAttribute('aria-label', savedTheme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему');
   
   // Переключение темы
   themeToggle.addEventListener('click', () => {
@@ -30,6 +33,7 @@ function initTheme() {
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
     themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    themeToggle.setAttribute('aria-label', newTheme === 'dark' ? 'Включить светлую тему' : 'Включить тёмную тему');
   });
 }
 
@@ -60,11 +64,9 @@ window.addEventListener('game:restart', () => {
   window.game = game;
 });
 
-// Обработка пробела
-document.addEventListener('keydown', (e) => {
-  if (e.code === 'Space' && game.gameState === 'GAME_OVER') {
-    window.dispatchEvent(new CustomEvent('game:restart'));
-  }
+window.addEventListener('resize', () => game.updateCanvasSize());
+document.getElementById('restart-button').addEventListener('click', () => {
+  window.dispatchEvent(new CustomEvent('game:restart'));
 });
 
 // Экспортируем для ручного тестирования

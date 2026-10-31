@@ -1,10 +1,10 @@
 export class Sound {
   constructor() {
     this.sounds = {
-      move: this.createSound('https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3'),
-      merge: this.createSound('https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-complete-level-2049.mp3'),
-      win: this.createSound('https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3'),
-      lose: this.createSound('https://assets.mixkit.co/sfx/preview/mixkit-arcade-retro-game-over-213.mp3')
+      move: this.createSound(new URL('../assets/sounds/move.mp3', import.meta.url).href),
+      merge: this.createSound(new URL('../assets/sounds/merge.mp3', import.meta.url).href),
+      win: this.createSound(new URL('../assets/sounds/win.mp3', import.meta.url).href),
+      lose: this.createSound(new URL('../assets/sounds/gameover.mp3', import.meta.url).href)
     };
     
     this.enabled = true;
@@ -21,7 +21,10 @@ export class Sound {
   setupMuteToggle() {
     const muteButton = document.createElement('button');
     muteButton.id = 'sound-toggle';
-    muteButton.innerHTML = '🔊';
+    muteButton.textContent = '🔊';
+    muteButton.type = 'button';
+    muteButton.setAttribute('aria-label', 'Выключить звук');
+    muteButton.setAttribute('aria-pressed', 'false');
     muteButton.style.position = 'absolute';
     muteButton.style.bottom = '20px';
     muteButton.style.right = '20px';
@@ -38,7 +41,9 @@ export class Sound {
     
     muteButton.addEventListener('click', () => {
       this.enabled = !this.enabled;
-      muteButton.innerHTML = this.enabled ? '🔊' : '🔇';
+      muteButton.textContent = this.enabled ? '🔊' : '🔇';
+      muteButton.setAttribute('aria-label', this.enabled ? 'Выключить звук' : 'Включить звук');
+      muteButton.setAttribute('aria-pressed', String(!this.enabled));
     });
   }
   

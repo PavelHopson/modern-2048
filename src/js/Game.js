@@ -13,7 +13,7 @@ function roundRect(ctx, x, y, w, h, r) {
 }
 
 export class Game {
-  constructor(size = 4, leaderboard = null) {
+  constructor(size = 4, leaderboard = null, sound = null) {
     this.size = size;
     this.score = 0;
     this.bestScore = Number(localStorage.getItem('bestScore')) || 0;
@@ -31,7 +31,7 @@ export class Game {
     this.bestScoreEl = document.getElementById('best-score');
 
     // Звуки
-    this.sound = new Sound();
+    this.sound = sound || new Sound();
 
     // Отступы и промежутки
     this.padding = 10; // Внутренняя рамка
@@ -39,7 +39,6 @@ export class Game {
 
     // Инициализация размеров
     this.updateCanvasSize();
-    window.addEventListener('resize', () => this.updateCanvasSize());
 
     // Инициализация игры
     this.initBoard();
@@ -262,6 +261,8 @@ export class Game {
         const t = this.board[y][x];
         if (t && t.value === 2048) {
           this.gameState = 'WIN';
+          this.messageEl.querySelector('.message-title').textContent = 'Победа!';
+          this.messageEl.classList.add('game-over');
           if (this.sound) this.sound.play('win');
           
           // Сохраняем рекорд
@@ -347,6 +348,7 @@ export class Game {
 
     if (!canMove) {
       this.gameState = 'GAME_OVER';
+      this.messageEl.querySelector('.message-title').textContent = 'Игра окончена';
       this.messageEl.classList.add('game-over');
       if (this.sound) this.sound.play('lose');
 
